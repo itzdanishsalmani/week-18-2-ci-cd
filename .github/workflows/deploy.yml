@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latet
+    runs-on: ubuntu-latest
     steps:
     - name: check out repo
       uses: actions/checkout@v2
@@ -27,4 +27,4 @@ jobs:
         tags: itzdanishsalmani/wee-k18-ci-cd:latest
 
     - name: Verify pushed image
-      frun: docker pull itzdanishsalmani/wee-k18-ci-cd:latest
+      run: docker pull itzdanishsalmani/wee-k18-ci-cd:latest
